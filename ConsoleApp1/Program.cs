@@ -3,10 +3,11 @@ Console.WriteLine("Peace!");
 Console.WriteLine("Love!");
 
 int[] arr = new[] { 1, 2, 3};
-Console.WriteLine(GetAvgFromArr(arr));
+
+Console.WriteLine(GetAverage(arr));
 Console.WriteLine(FindMax(arr));
 
-static double GetAvgFromArr(int[] arr)
+static double GetAverage(int[] arr)
 {
     int result = 0;
     foreach (var num in arr)
