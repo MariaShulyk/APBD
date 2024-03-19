@@ -4,6 +4,7 @@ Console.WriteLine("Love!");
 
 int[] arr = new[] { 1, 2, 3};
 Console.WriteLine(GetAvg(arr));
+Console.WriteLine(FindMax(arr));
 
 static double GetAvg(int[] arr)
 {
@@ -14,4 +15,18 @@ static double GetAvg(int[] arr)
     }
 
     return (double)result / arr.Length;
+}
+
+static int FindMax(int[] arr)
+{
+    int max = arr[0];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+
+    return max;
 }
